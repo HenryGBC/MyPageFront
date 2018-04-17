@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+body{
+    background: #e6e6e6;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #161621;
+    strong{
+        font-weight: bold;
+    }
+    .section-one{
+        height: 100vh;
+        width: 100%;
+        
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1600px;
+        }
+        .text{
+            width: 60%;
+            *{
+                color: #161621;
+            }
+            h1{
+                font-size: 66px;
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 19px;
+                font-weight: 100;
+                margin: 8px 0;
+
+                &.quote{
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    margin-top: 17px;
+                }
+
+                .github{
+                    font-size: 28px;
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            .image{
+                background: url("../img/person_31.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 400px;   
+                margin-top: 30px;
+                position: relative;
+    
+                
+            }
+            .contact{
+                text-align: center;
+                h4{
+                    margin: 0;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+                a{
+                    color: #161621;
+                    text-decoration: none;
+                    font-size: 25px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    }
+}
