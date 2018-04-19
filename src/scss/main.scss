@@ -1,82 +1,131 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 body{
     background: #e6e6e6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
     color: #161621;
     strong{
         font-weight: bold;
     }
+    
+    .btn{
+        padding: 17px 40px;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+        border: 2px solid;
+        background-color: transparent;
+        font-weight: 100;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        &.btn-dark{
+            border: 2px solid #161621;
+            color: #161621;
+
+            &:hover{
+                background-color: #161621;
+                color: #fff;
+            }
+        }
+        &.btn-light{
+            border: 2px solid #fff;
+            color: #fff;
+
+            &:hover{
+                background-color: #fff;
+                color: #161621;
+            }
+        }
+    }
+
+    .navbar{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #161621;
+        color: #fff;
+        height: 53px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 8px 6px -6px #999;
+        .logo{
+            margin-left: 24px;
+            h2{
+                color: #fff;
+            }
+        }
+
+        .btn{
+            margin-right: 24px;
+        }
+    }
     .section-one{
         height: 100vh;
         width: 100%;
-        
+        background: url("../img/developer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: #51518d66;
         .row{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
-            max-width: 1600px;
+            max-width: 600px;
         }
         .text{
-            width: 60%;
-            *{
-                color: #161621;
-            }
+            width: 100%;
+            text-align: center;
             h1{
-                font-size: 66px;
-                font-weight: 900;
-                margin-bottom: 10px;
+                font-size: 65px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 5px; 
+                margin-top: 0;
             }
-
-            p{
-                font-size: 19px;
+            h2{
+                color: #fff;
                 font-weight: 100;
-                margin: 8px 0;
-
-                &.quote{
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    margin-top: 17px;
-                }
-
-                .github{
-                    font-size: 28px;
-                }
-            }
-        }
-        .right{
-            width: 40%;
-            .image{
-                background: url("../img/person_31.png");
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 400px;   
-                margin-top: 30px;
-                position: relative;
-    
-                
-            }
-            .contact{
-                text-align: center;
-                h4{
-                    margin: 0;
-                    margin-bottom: 5px;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                }
-                a{
-                    color: #161621;
-                    text-decoration: none;
-                    font-size: 25px;
-                    margin-right: 5px;
-                }
+                font-size: 31px;
+                letter-spacing: 5px;
             }
         }
 
+    }
+
+    .section-two{
+        padding: 40px;
+        text-align: center;
+        background-color: #dedede;
+        .title{
+            *{
+                margin: 0;
+                font-size: 46px;
+                font-weight: 900;
+                letter-spacing: 3px;
+            }
+        }
+        p{
+            width: 90%;
+            margin: 0 auto;
+            max-width: 650px;
+            font-size: 21px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .btn{
+            margin-top: 20px;
+        }
     }
 }
